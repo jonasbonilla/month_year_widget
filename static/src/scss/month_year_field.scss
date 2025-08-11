@@ -1,0 +1,10 @@
+.o_field_month_year {
+    position: relative;
+
+    &:focus-within {
+        outline: 0;
+        .o_set_current_month {
+            visibility: visible;
+        }
+    }
+}

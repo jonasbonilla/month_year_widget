@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="month_year_widget.MonthYearField">
+        <div class="o_field_month_year">
+            <input
+                type="month"
+                t-att-id="props.id"
+                class="o_input cursor-pointer"
+                t-att-placeholder="props.placeholder"
+                t-att-value="state.value and state.value.isValid ? state.value.toFormat('yyyy-MM') : ''"
+                t-on-change="onChange"
+            />
+        </div>
+    </t>
+</templates>
